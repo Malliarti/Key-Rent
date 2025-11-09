@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оставить заявку - Key Rent</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo_gold_short.png">
+</head>
+
+<body>
+<!-- Шапка -->
+<header class="header">
+    <div class="container">
+        <div class="header-content">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo_white.png" alt="Логотип Key Rent" class="logo-img">
+                    <span class="logo-text">Key Rent</span>
+                </a>
+            </div>
+            
+            <!-- Навигация -->
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li>
+                        <a href="service.html">Услуги ▼</a>
+                        <ul class="nav-sub">
+                            <li><a href="#">Подбор помещения</a></li>
+                            <li><a href="#">Юридическая консультация</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">О компании</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-contact">
+                <a href="tel:88001234567" class="phone">8 (800) 123-45-67</a>
+                <span class="work-time">Ежедневно 9:00 - 21:00</span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Основной контент -->
+<main class="main">
+    <div class="container">
+        <div class="application-wrapper">
+            <div class="application-form">
+                <h2>Оставить заявку</h2>
+                <p class="application-description">
+                    Ищете идеальное помещение для аренды или нужна юридическая помощь?<br>
+                    Заполните форму и наш специалист свяжется с вами для бесплатной консультации.
+                </p>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Ваше имя *</label>
+                        <input type="text" id="name" name="name" required placeholder="Иван Иванов">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Телефон *</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="+7 (XXX) XXX-XX-XX">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="email@mail.ru">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="property-type">Вас интересует</label>
+                        <select id="property-type" name="property_type">
+                            <option value="">Выберите предложение</option>
+                            <option value="apartment">Подбор жилого помещения</option>
+                            <option value="house">Подбор коммерческого помещения</option>
+                            <option value="commercial">Юридическая консультация</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Дополнительная информация</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Укажите особые пожелания..."></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn btn-primary">Отправить заявку</button>
+                    
+                    <p class="form-note">
+                        Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности<br>
+                        * - обязательные поля для заполнения.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Подвал -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="logo">
+                   <a href="index.html">
+                    <img src="images/logo_white.png" alt="Логотип Key Rent" class="logo-img">
+                    <span class="logo-text">Key Rent</span>
+                </a>
+                </div>
+                <p class="footer-description">
+                    Агентство аренды недвижимости "Key Rent" поможет вам найти идеальное помещение для жизни и бизнеса.
+                </p>
+                <p>Наш девиз: "Заселяйся легко!"</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3 class="footer-title">Связаться с нами</h3>
+                <div class="footer-contacts">
+                    <p>г. Вологда, ул. Ильюшина, д. 6</p>
+                    <p>8 (800) 123-45-67</p>
+                    <p>info@keyrent.ru</p>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3 class="footer-title">Навигация</h3>
+                <ul class="footer-nav">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="service.html">Услуги</a></li>
+                    <li><a href="about.html">О компании</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2025 Key Rent</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
