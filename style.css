@@ -792,3 +792,137 @@ body {
 .catalog-item.disabled .catalog-specs, .catalog-item.disabled .catalog-address {
     color: #bdc4d4;
 }
+
+/* Адаптация для 1440px */
+@media (max-width: 1440px) {
+    .container { max-width: 1200px; padding: 0 15px; }
+    .slider { height: 500px; }
+    .slide-title { font-size: 36px; }
+    .slide-subtitle { font-size: 18px; }
+    .stat-number { font-size: 28px; }
+}
+
+/* Адаптация для 1024px */
+@media (max-width: 1024px) {
+    .container { max-width: 960px; }
+    .header-content { flex-direction: column; gap: 15px; }
+    .nav-list { flex-direction: column; align-items: center; gap: 10px; }
+    .nav-sub { 
+        position: static; opacity: 1; visibility: visible; transform: none; 
+        display: none; width: 100%; background: transparent; border: none; 
+    }
+    .nav-list > li:hover .nav-sub { display: block; }
+    
+    .slider { height: 400px; }
+    .slide-content { padding: 40px 30px; margin: 0 15px; }
+    .slide-title { font-size: 30px; }
+    .slide-subtitle { font-size: 16px; }
+    .slide-stats { gap: 30px; }
+    .stat-number { font-size: 24px; }
+    
+    .catalog-grid, .service-wrapper { grid-template-columns: 1fr 1fr; gap: 20px; }
+    .contacts-wrapper { grid-template-columns: 1fr; gap: 30px; }
+    .footer-content { grid-template-columns: 1fr 1fr; gap: 30px; }
+    .buttons-container { flex-direction: column; align-items: center; }
+}
+
+/* Адаптация для 425px */
+@media (max-width: 425px) {
+    .container { padding: 0 10px; }
+    .logo-text { font-size: 20px; }
+    .phone { font-size: 16px; }
+    .header-contact { text-align: center; }
+    
+    /* Слайдер */
+    .slider-section { padding: 20px 0; }
+    .slider, .slides-container { height: auto; min-height: 300px; }
+    .slide { min-height: 300px; padding: 20px 0; }
+    .slide-content { padding: 20px 15px; margin: 10px; max-width: 90%; }
+    .slide-title { font-size: 18px; margin-bottom: 10px; }
+    .slide-subtitle { font-size: 12px; margin-bottom: 20px; }
+    .slide-stats { gap: 15px; margin-bottom: 20px; flex-direction: column; }
+    .stat { padding: 0; }
+    .stat-number { font-size: 18px; }
+    .stat-label { font-size: 11px; }
+    .slide-btn { padding: 10px 20px; font-size: 12px; min-width: 150px; }
+    
+    .page-title { font-size: 24px; }
+    .catalog-grid { grid-template-columns: 1fr; gap: 15px; }
+    
+    /* Исправляем расположение карточек услуг на один столбец */
+    .service-wrapper {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .service-unit {
+        padding: 20px 15px;
+    }
+    
+    .service-unit h2 {
+        font-size: 18px;
+    }
+    
+    /* Футер */
+    .footer-content { 
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto auto auto; 
+        gap: 25px; 
+        text-align: center; 
+    }
+    .footer-section { 
+        border-bottom: 1px solid #52677d; 
+        padding-bottom: 20px; 
+    }
+    .footer-section:last-child { border-bottom: none; padding-bottom: 0; }
+    
+    /* Формы */
+    .contact-form { gap: 15px; }
+    .form-group input, .form-group select, .form-group textarea { padding: 10px 12px; }
+}
+
+/* Адаптация для 320px */
+@media (max-width: 320px) {
+    .container { padding: 0 8px; }
+    .logo-img { width: 30px; height: 30px; }
+    .logo-text { font-size: 18px; }
+    .nav-list { gap: 8px; }
+    .nav-list > li > a { font-size: 14px; padding: 10px 0; }
+    
+    /* Слайдер */
+    .slider, .slide { min-height: 280px; }
+    .slide { padding: 15px 0; }
+    .slide-content { padding: 15px 10px; margin: 8px; }
+    .slide-title { font-size: 16px; }
+    .slide-subtitle { font-size: 11px; margin-bottom: 15px; }
+    .stat-number { font-size: 16px; }
+    .stat-label { font-size: 10px; }
+    .slide-btn { padding: 8px 16px; font-size: 11px; min-width: 140px; }
+    
+    .page-title { font-size: 20px; }
+    .card-style, .contacts-info, .contacts-map, 
+    .about-info, .application-form, .service-info { padding: 15px 12px; }
+    .btn-primary { padding: 10px 18px; font-size: 13px; }
+    
+    /* Адаптация для страницы услуг (как в каталоге) */
+    .service-wrapper {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .service-unit {
+        padding: 20px 15px;
+    }
+    
+    .service-unit h2 {
+        font-size: 18px;
+        padding-bottom: 8px;
+    }
+    
+    .service-unit p {
+        font-size: 14px;
+    }
+    
+    .footer-content { gap: 20px; }
+    .footer-section { padding-bottom: 15px; }
+}
