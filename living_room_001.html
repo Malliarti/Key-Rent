@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Оставить заявку - Key Rent</title>
+    <title>Жилое помещение 001 - Key Rent</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/logo_gold_short.png">
 </head>
@@ -42,52 +42,62 @@
 <!-- Основной контент -->
 <main class="main">
     <div class="container">
-        <div class="application-wrapper">
-            <div class="application-form">
-                <h2>Оставить заявку</h2>
-                <p class="application-description">
-                    Ищете идеальное помещение для аренды или нужна юридическая помощь?<br>
-                    Заполните форму и наш специалист свяжется с вами для бесплатной консультации.
-                </p>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <label for="name">Ваше имя *</label>
-                        <input type="text" id="name" name="name" required placeholder="Иван Иванов">
+        <h1 class="page-title">Вологда, Гоголя 11А</h1>
+        
+        <div class="contacts-wrapper">
+            <!-- Описание -->
+            <div class="contacts-info">
+                <div class="contact-section">
+                    <h2>Просторная и светлая двушка в центре Вологды</h2>
+                    <div class="service-text">
+                        <div>
+                            <p>Общая площадь: 85.4 м²</p>
+                            <p>Комнат: 2</p>
+                            <p>Этаж 3/3</p>
+                            <p>Адрес: Россия, Вологда, ул. Гоголя, 11А</p>
+                            <p>Цена: 30 000 ₽ / месяц</p>
+                            <p>Квартира находится в самом сердце Вологды, в шаговой доступности от набережной.</p>
+                            <p>Большие окна выходят на солнечную сторону, обеспечивая квартиру естественным светом в течение всего дня. Панорамные виды на историческую застройку центра города.</p>
+                        </div>
                     </div>
+                </div>
+            </div>
 
-                    <div class="form-group">
-                        <label for="phone">Телефон *</label>
-                        <input type="tel" id="phone" name="phone" required placeholder="+7 (XXX) XXX-XX-XX">
-                    </div>
+<!-- Слайд-шоу -->
+<div class="contacts-map">
+    <div class="radio-slider">
 
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="email@mail.ru">
-                    </div>
+        <input type="radio" name="slider" id="slide1" checked>
+        <input type="radio" name="slider" id="slide2">
+        <input type="radio" name="slider" id="slide3">
+        
+        <div class="radio-slides">
+            <div class="radio-slide">
+                <img src="images/жилое1.jpg" alt="Гостинная" class="radio-slide-img">
+            </div>
+            <div class="radio-slide">
+                <img src="images/жилое11.jpg" alt="Кухня" class="radio-slide-img">
+            </div>
+            <div class="radio-slide">
+                <img src="images/жилое111.jpg" alt="Туалет" class="radio-slide-img">
+            </div>
+        </div>
 
-                    <div class="form-group">
-                        <label for="property-type">Вас интересует</label>
-                        <select id="property-type" name="property_type">
-                            <option value="">Выберите услугу</option>
-                            <option value="apartment">Подбор жилого помещения</option>
-                            <option value="house">Подбор коммерческого помещения</option>
-                            <option value="living">Аренда выбраного помещения</option>
-                            <option value="commercial">Юридическая консультация</option>
-                        </select>
-                    </div>
+        <div class="radio-dots">
+            <label for="slide1" class="radio-dot"></label>
+            <label for="slide2" class="radio-dot"></label>
+            <label for="slide3" class="radio-dot"></label>
+        </div>
+    </div>
+</div>
+</div>
 
-                    <div class="form-group">
-                        <label for="message">Дополнительная информация</label>
-                        <textarea id="message" name="message" rows="4" placeholder="Укажите особые пожелания..."></textarea>
-                    </div>
+        <div class="buttons-section">
+            <h2>Понравилось помещение?</h2>
+            <p>Звоните нам и оно станет вашим уже через 48 часов! Наша команда соберет все нужные бумаги и организует встречу.</p>
 
-                    <button type="submit" class="submit-btn btn-primary">Отправить заявку</button>
-                    
-                    <p class="form-note">
-                        Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности<br>
-                        * - обязательные поля для заполнения.
-                    </p>
-                </form>
+            <div class="buttons-container">
+                <a href="application.html" class="cta-btn btn-primary">Оставить заявку</a>
             </div>
         </div>
     </div>
